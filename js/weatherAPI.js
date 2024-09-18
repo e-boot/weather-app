@@ -5,20 +5,14 @@ const API_URL = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q
 
 
 async function getWeatherData(city) {
-    showLoader();
-   try{
     const response = await fetch(API_URL + city +`&appid=${API_KEY}`);
 
     if(response.status == 404){
         document.querySelector(".error").style.display = "block";        document.querySelector(".weather").style.display = "none";
-    } 
+    }
 
     return await response.json();
-    }catch(error){
-    console.log("unable to fetch from weather data from API");
-    }finally{
-        hideLoader();
     }
-}
+
 
     export {getWeatherData}
