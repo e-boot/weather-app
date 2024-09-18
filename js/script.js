@@ -34,7 +34,7 @@ const weatherIcon = document.querySelector(".weather-icon");
                 weatherIcon.src = "../images/clear.png";
             }
             if(data.weather[0].main ==  "Rain") {
-                weatherIcon.src = "..//images/rain.png";
+                weatherIcon.src = "../images/rain.png";
             }
             if(data.weather[0].main ==  "Drizzle") {
                 weatherIcon.src = "../images/drizzle.png";
