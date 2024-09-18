@@ -28,19 +28,19 @@ const weatherIcon = document.querySelector(".weather-icon");
             document.querySelector(".wind").innerHTML = data.wind.speed + " km/h"
             
             if(data.weather[0].main ==  "Clouds") {
-                weatherIcon.src = "../assets/images/clouds.png";
+                weatherIcon.src = "../images/clouds.png";
             }
             if(data.weather[0].main ==  "Clear") {
-                weatherIcon.src = "../assets/images/clear.png";
+                weatherIcon.src = "../images/clear.png";
             }
             if(data.weather[0].main ==  "Rain") {
-                weatherIcon.src = "../assets/images/rain.png";
+                weatherIcon.src = "..//images/rain.png";
             }
             if(data.weather[0].main ==  "Drizzle") {
-                weatherIcon.src = "../assets/images/drizzle.png";
+                weatherIcon.src = "../images/drizzle.png";
             }
             if(data.weather[0].main ==  "Mist") {
-                weatherIcon.src = "../assets/images/mist.png";
+                weatherIcon.src = "../images/mist.png";
             }
             document.querySelector(".weather").style.display = "block";
             document.querySelector(".error").style.display = "none";
