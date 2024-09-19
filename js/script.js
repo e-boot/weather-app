@@ -33,15 +33,15 @@ const weatherIcon = document.querySelector(".weather-icon");
 
             switch(data.weather[0].main){
                 case "Clouds":
-                    weatherIcon.src = "../assets/clear.png";
+                    weatherIcon.src = "assets/clouds.png";
                 case "Clear":
-                    weatherIcon.src = "../assets/clear.png";
+                    weatherIcon.src = "assets/clear.png";
                 case "Rain":
-                    weatherIcon.src = "../assets/rain.png";
+                    weatherIcon.src = "assets/rain.png";
                 case "Drizzle":
-                    weatherIcon.src = "../assets/drizzle.png";
+                    weatherIcon.src = "assets/drizzle.png";
                 case  "Mist":
-                    weatherIcon.src = "../assets/mist.png";
+                    weatherIcon.src = "assets/mist.png";
             }
 
             document.querySelector(".weather").style.display = "block";
