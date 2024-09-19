@@ -55,19 +55,19 @@ body{
 }
 
 .weather-icon{
-    width: 50%;
-    margin: 10vh;
+    width: 40%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 .weather h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
 }
 
 .weather h2 {
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 400;
-    margin-top: -10px;
 }
 
 .details {
