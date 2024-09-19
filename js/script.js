@@ -5,6 +5,7 @@ import { showLoader, hideLoader } from "./loader.js";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
+const weather = document.querySelector(".weather");
 
         /**
          * Main function to check weather from API data and update the view
@@ -44,9 +45,11 @@ const weatherIcon = document.querySelector(".weather-icon");
                     weatherIcon.src = "https://e-boot.github.io/weather-app/assets/mist.png";
             }
 
-            document.querySelector(".weather").style.display = "block";
+            weather.style.display = "block";
             document.querySelector(".error").style.display = "none";
         }
+
+            weather.style.display = "none";
 
         // listens to button search click
         searchBtn.addEventListener("click", () =>{
